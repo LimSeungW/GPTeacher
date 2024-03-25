@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPteacher</title>
+    <link rel="stylesheet" href="../style/main_style.css">
+    <link rel="stylesheet" href="../style/animation.css">
+</head>
+<body>
+    <!--메인컨테이너 영역-->
+    <div class="main_C" id="ID_main_C">
+        <h1>Hello, Friend!!</h1>
+        <h4>I am GPTeacher, a GPT-based English conversation program.</h4>
+
+        <!-- 시작버튼 -->
+        <button class="Start_Button" id="ID_startButton">
+            <p>Get Start!</p>
+            <div class="circle">
+                →
+            </div>
+        </button>
+    </div>
+    
+
+    <script>
+        const chatElement = document.getElementById('ID_startButton');
+        chatElement.addEventListener('click', function() {
+            // 현재 페이지에 슬라이딩 아웃 애니메이션 클래스 추가
+            document.body.classList.add('slide-out');
+            setTimeout(function() {
+                location.href = "chat.html";
+            }, 200);
+        });
+
+        // 페이지가 로드될 때 애니메이션 클래스 제거
+        window.addEventListener('pageshow', function(event) {
+            if (event.persisted) {
+                document.body.classList.remove('slide-out');
+                document.body.classList.add('slide-in');
+            }
+        });
+    </script>
+</body>
+</html>

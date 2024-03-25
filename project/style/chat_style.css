@@ -1,0 +1,87 @@
+body{
+  background-image: linear-gradient(to right, #FFF9E3, #ccc 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+  margin: 0;
+}
+
+/* 채팅컨테이너 메인 */
+.chat_C{
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 70vh;
+  border: 3px solid #7822E9;
+  background-color: white;
+  border-radius: 56px;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+
+  overflow-y: auto;
+  
+}
+/* 방향이 가로인 컨테이너*/
+.chat_row {
+  display: flex;
+  flex-direction: row;
+}
+/*방향이 가로인데, 아이템을 오른쪽부터 배치하는 컨테이너 */
+.chat_row_end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 1.5vw;
+}
+.chat_row img{
+  align-self: flex-end;
+  margin-left:1.5vw;
+}
+#ID_Speak{
+  align-self: flex-end;
+  margin-left:0.5vw;
+}
+/*ID_Translate로 시작하는 모든 개체에 적용 */
+[id^="ID_Translate"] {
+  align-self: flex-end;
+  margin-left: 0.5vw;
+}
+/* 채팅글꼴양식 */
+.chat_form{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+  max-width: 25%;
+  margin-top: 2vh;
+
+  border-radius: 8px;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.4vw;
+}
+
+/* 상대가보낸 채팅 */
+.your_chat{
+  background-color: #CCC;
+  border: 1px solid #c5c4c4;
+  align-self: flex-start;
+  color: black;
+  margin-left:1vw;
+
+}
+
+/* 내가보낸 채팅 */
+.my_chat{
+  background-color: #4694FF;
+  border: 1px solid #448df4;
+  color:white;  /*폰트 색깔 하얀색 */
+}
+
+/* 사용자 입력 */
+.my_input {
+  background-color: white;
+  border: 2px solid #7822E9;
+  padding-right: 40px; /* 오른쪽 패딩을 버튼 너비만큼 추가합니다. */
+  align-self: flex-end;
+  margin-right: 2vw;
+}
+

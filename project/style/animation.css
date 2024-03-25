@@ -1,0 +1,26 @@
+/* 슬라이드 애니메이션 */
+.slide-in {
+    animation: slide-in 0.5s ease forwards;
+  }
+  
+  .slide-out {
+    animation: slide-out 0.5s ease forwards;
+  }
+  
+/* 애니메이션 키 프레임 */
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-out {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

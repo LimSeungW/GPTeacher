@@ -1,0 +1,74 @@
+body {
+    background-image: linear-gradient(to right, #FFF9E3, #ccc 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    margin: 0;
+}
+
+.main_C{
+    width: 70vw;
+    height: 70vh;
+    background-image: linear-gradient(to right, #AF81F3, #7822E9 30%);
+    border-radius: 56px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.main_C h1{
+    color:white;
+    font-size: 2vw;
+    text-align: center; /* 텍스트를 가운데 정렬하기 위해 추가 */
+    text-justify: center;
+
+    margin-top:20%;
+}
+
+.main_C h4{
+    color:white;
+    font-size: 1vw;
+    text-align: center; /* 텍스트를 가운데 정렬하기 위해 추가 */
+    text-justify: center;
+}
+
+.Start_Button{
+    width:7vw;
+    height: 4vh;
+    background-color: white;
+    border-radius: 56px;
+    display: flex;
+    align-items: center;
+    color:#7822E9;
+    font-size: 1vw;
+    font-weight: bold;
+    border: none;
+    cursor: pointer; /* 마우스 오버 시 커서 모양 설정 */
+    outline: none; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-left: auto; /* 좌우 여백 자동 조정 */
+    margin-right: auto;
+    margin-top:8vh; 
+}
+.Start_Button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  }
+
+.circle{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color:#7822E9;
+    color:white;
+    font-size: 1.2vw;
+    font-weight: bold;
+    border-radius: 50%;
+
+    font-size: 1vw;
+    text-align: center;
+}
+
