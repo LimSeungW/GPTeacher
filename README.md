@@ -45,9 +45,9 @@ The resolution process for this issue will be recorded in detail in the Issue ta
 - Open AI API Key  ->chatbot.js 
 두가지 API 키 모두  "abcdefc123456" 과 같은 String 배열형식으로 되어있습니다.  각 API키를 두 파일 최상단 API KEY부분에 입력합니다. 
 2. NodeJS를 통해 로컬서버 환경구축을 위한 'express'를설치합니다. 
-- 터미널 명령어(Terminal command) =>  npm install express
+- 터미널 명령어(Terminal command) =>  `npm install express`
 3. 로컬서버 환경을 실행한 후 , 포트로 접속합니다. 
-- 터미널명령어 (Termainal command) => node server.js
+- 터미널명령어 (Termainal command) => `node server.js`
 - localhost:3000 접속 
 ***
 1. This project requires the issuance of two API KEY.
